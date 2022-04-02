@@ -1,3 +1,12 @@
-// .home{
-//     width: 1;
-// }
+.carousel-item > img{
+    width: 100%;
+    height: 100vh;
+}
+
+.home-content{
+    color: #fff;
+    font-size: 60rem;
+    position: fixed;
+    left: 32%;
+    top: 40%;
+}
