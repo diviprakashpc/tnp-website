@@ -6,7 +6,7 @@
 .home-content {
   color: #fff;
   font-size: 60rem;
-  position: fixed;
+  position: absolute;
   left: 32%;
   top: 40%;
 }
