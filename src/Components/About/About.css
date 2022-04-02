@@ -1,0 +1,13 @@
+.about {
+  margin: 2.5rem;
+  border: 1px solid #dbd7d7;
+  border-radius: 2rem;
+  padding: 1.5rem 2rem 2rem 2rem;
+  -webkit-box-shadow: 0 0 0.5rem 0.5rem #d8d5d5;
+          box-shadow: 0 0 0.5rem 0.5rem #d8d5d5;
+}
+
+.about h2 {
+  margin-bottom: 1.5rem;
+}
+/*# sourceMappingURL=About.css.map */
