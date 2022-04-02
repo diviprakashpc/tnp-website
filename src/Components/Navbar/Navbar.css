@@ -1,0 +1,24 @@
+.custom-navbar {
+  background-color: rgba(100, 104, 104, 0.8) !important;
+}
+
+.navbar-brand {
+  content: "";
+}
+
+.ms-5 {
+  margin-left: 5rem !important;
+}
+
+.nav-item {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.nav-item:hover, .nav-item:active {
+  border-bottom: 2px solid #fff;
+}
+/*# sourceMappingURL=Navbar.css.map */
