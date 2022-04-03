@@ -2,12 +2,9 @@
   background-color: rgba(148, 150, 150, 0.2) !important;
 }
 
-.navbar-brand {
-  content: "";
-}
-
-.ms-5 {
-  margin-left: 5rem !important;
+.ms-2 {
+  margin-left: 2.5rem !important;
+  margin-top: 0.7rem;
 }
 
 .nav-item {
@@ -16,14 +13,21 @@
   transition: all 0.1s;
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
+  margin-right: 3rem !important;
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  color: rgba(247, 243, 243, 0.9) !important;
 }
 
 .nav-link:hover {
-  color: #fff;
+  color: #fff !important;
   border-bottom: 2px solid #fff;
 }
 
 .active {
+  color: #fff !important;
   border-bottom: 2px solid #fff;
 }
 /*# sourceMappingURL=Navbar.css.map */

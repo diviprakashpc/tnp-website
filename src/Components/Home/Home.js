@@ -2,7 +2,7 @@ import React from 'react'
 import './Home.css';
 function Home() {
     return (
-        <>
+        <div id='home'>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -28,7 +28,7 @@ function Home() {
             <h1>Training and Placement Cell</h1>
             <h2>IIIT BHOPAL</h2>
         </div>
-        </>
+        </div>
     )
 }
 
