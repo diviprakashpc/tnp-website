@@ -2,23 +2,35 @@
     background-color: rgba(148, 150, 150, 0.2)!important;
 }
 
+<<<<<<< HEAD
 .navbar-brand{
     content: "";
 }
 
 .ms-2 {
     margin-left: 1.7rem!important;
+=======
+.ms-2 {
+    margin-left: 2.5rem!important;
+    margin-top: 0.7rem;
+>>>>>>> about
 }
 
 .nav-item{
     border-bottom: 2px solid rgba(0,0,0,0);
     transition: all 0.1s;
     transition-timing-function: ease;
+    margin-right: 3rem!important;
+    font-size: 1.2rem ;
+}
+.nav-link{
+    color: rgba(247, 243, 243,0.9)!important;
 }
 .nav-link:hover{
-        color: #fff;
+        color: #fff!important;
         border-bottom: 2px solid #fff;
 }
 .active{
+    color: #fff!important;
     border-bottom: 2px solid #fff;
 }

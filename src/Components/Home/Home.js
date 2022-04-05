@@ -2,7 +2,11 @@ import React from 'react'
 import './Home.css';
 function Home() {
     return (
+<<<<<<< HEAD
         <div className='home'>
+=======
+        <div id='home'>
+>>>>>>> about
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">

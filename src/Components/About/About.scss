@@ -1,0 +1,148 @@
+$bgcolor : #fff;
+
+.aboutUs{
+    background-color: $bgcolor;
+    margin: 2.5rem;
+    border-radius: 1.4rem;
+    padding: 1.5rem 2rem 2rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 1.96px 0.88px;
+    h2{
+        margin-bottom: 1.7rem;
+        span{
+            border-bottom: 4px solid rgb(38, 93, 245);
+            border-radius: .2rem;
+            padding-bottom: 0.2rem;
+        }
+    }
+}
+
+.director-desk{
+    background-color: $bgcolor;
+    margin: 4rem 4.4rem;
+    h2{
+        span{
+            border-bottom: 4px solid rgb(38, 93, 245);
+        border-radius: .2rem;
+        padding-bottom: 0.4rem;
+        }
+    }
+    .director-content{
+        display: flex;
+        margin-top: 1.2rem;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .director-image{
+        margin: 0rem 6rem 0 2rem;
+        height: 13rem;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    }
+    .director-message{
+        margin-top: 1rem;
+        max-height: 400px;
+        margin-right: 3rem;
+        font-size: 1.19rem;
+        overflow-y: scroll;
+        border: 1px solid rgb(233, 231, 231);
+        border-radius:  2rem;
+        padding: 1rem;
+        box-shadow: 0 0 0.4rem 0rem rgb(146, 145, 145);
+    }
+    .quote::before{
+        content: open-quote;
+        margin-right: 0.5rem;
+        display: inline;
+        height: 0;
+        line-height: 0;
+        position: relative;
+        left: 0.1rem;
+        top: 0.8rem;
+        color: #ccc;
+        font-size: 3rem;
+    }
+    .quote::after{
+        content: close-quote;
+        margin-left: 0.5rem;
+        display: inline;
+        height: 0;
+        line-height: 0;
+        position: relative;
+        left: 0.1rem;
+        top: 0.8rem;
+        color: #ccc;
+        font-size: 3rem;
+    }
+    .director-name{
+        color: rgb(155, 153, 153);
+        text-align: end;
+        font-weight: bold;
+    }
+}
+
+/*--TPO--*/
+.tpo-desk{
+    margin: 7rem 4.4rem 0 4.4rem;
+    h2{
+        text-align: right;
+        margin-bottom: 2rem;
+        span{
+            border-bottom: 4px solid rgb(38, 93, 245);
+        border-radius: .2rem;
+        padding-bottom: 0.4rem;
+        }
+    }
+    .tpo-content{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 1.2rem;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .tpo-image{
+        margin: 0rem 6rem 0 2rem;
+        height: 13rem;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    }
+    .tpo-message{
+        margin-top: 1rem;
+        max-height: 400px;
+        margin-right: 3rem;
+        font-size: 1.19rem;
+        overflow-y: scroll;
+        border: 1px solid rgb(233, 231, 231);
+        border-radius:  2rem;
+        padding: 1rem;
+        box-shadow: 0 0 0.4rem 0rem rgb(146, 145, 145);
+    }
+    .quote::before{
+        content: open-quote;
+        margin-right: 0.5rem;
+        display: inline;
+        height: 0;
+        line-height: 0;
+        position: relative;
+        left: 0.1rem;
+        top: 0.8rem;
+        color: #ccc;
+        font-size: 3rem;
+    }
+    .quote::after{
+        content: close-quote;
+        margin-left: 0.5rem;
+        display: inline;
+        height: 0;
+        line-height: 0;
+        position: relative;
+        left: 0.1rem;
+        top: 0.8rem;
+        color: #ccc;
+        font-size: 3rem;
+    }
+    .tpo-name{
+        color: rgb(155, 153, 153);
+        text-align: end;
+        font-weight: bold;
+    }
+}
