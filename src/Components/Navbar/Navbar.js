@@ -1,12 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Navbar.css';
 
 const Navbar = () => {
+    const [change,setChange] = useState(false);
+    console.log({change});
+    const handleScroll = () => {console.log("on scroll");
+    console.log(window.scrollY);    
+    if(window.scrollY > 650){console.log("change to true");
+            setChange(true);
+        }else{
+            setChange(false);
+        }
+    }
+    useEffect(() => {
+      window.addEventListener('scroll',handleScroll);    
+      return () => {
+        window.removeEventListener('scroll',handleScroll);
+      }
+    }, [])
+    
     return (
-        <nav className="custom-navbar navbar fixed-top navbar-expand-lg navbar-dark">
+        <nav className={`custom-navbar ${change && 'change-color'} navbar fixed-top navbar-expand-lg navbar-dark`}>
             <div className="container-fluid">
                 <a className="navbar-brand ms-2" href="#">
-                    <img src="images/collegeLogo.svg" className='iin' width="60" height="60" alt="IIIT Bhopal Logo" ></img>
+                    <img src="images/collegeLogo.svg" className='navbar-logo' alt="IIIT Bhopal Logo" ></img>
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

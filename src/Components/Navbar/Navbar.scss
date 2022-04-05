@@ -1,27 +1,58 @@
-.custom-navbar{
-    background-color: rgba(148, 150, 150, 0.2)!important;
+.custom-navbar {
+  background-color: transparent !important;
+  height: 8vh;
+  transition: all 1s;
+}
+/*Class to handle color change on scroll*/
+.change-color{
+    background-color: rgb(93, 139, 244) !important;
+}
+.navbar-logo {
+  height: 6vh;
 }
 
 .ms-2 {
-    margin-left: 2.5rem!important;
-    margin-top: 0.7rem;
+  margin-left: 2.3rem !important;
+  margin-top: 0.3rem;
 }
 
-.nav-item{
-    border-bottom: 2px solid rgba(0,0,0,0);
-    transition: all 0.1s;
-    transition-timing-function: ease;
-    margin-right: 3rem!important;
-    font-size: 1.2rem ;
+.nav-item {
+//   border-bottom: 2px solid rgba(0, 0, 0, 0);
+//   transition: all 0.1s;
+//   transition-timing-function: ease;
+  margin-right: 3rem !important;
+  font-size: 1.2rem;
 }
-.nav-link{
-    color: rgba(247, 243, 243,0.9)!important;
+.nav-link {
+  color: rgba(230, 228, 228, 0.9) !important;
+  position: relative;
 }
 .nav-link:hover{
-        color: #fff!important;
-        border-bottom: 2px solid #fff;
+    color: rgb(248, 246, 246) !important;
 }
-.active{
-    color: #fff!important;
-    border-bottom: 2px solid #fff;
+
+.nav-link,
+.nav-link::after,
+.nav-link::before {
+  transition: all .5s;
+}
+.nav-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: rgb(248, 246, 246);
+  height: 3px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.active {
+  color: #fff !important;
 }
