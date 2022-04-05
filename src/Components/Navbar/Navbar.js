@@ -6,11 +6,7 @@ const Navbar = () => {
         <nav className="custom-navbar navbar fixed-top navbar-expand-lg navbar-dark">
             <div className="container-fluid">
                 <a className="navbar-brand ms-2" href="#">
-<<<<<<< HEAD
-                    <img src="images/collegeLogo.svg" width="45" height="45" alt="IIIT Bhopal Logo" ></img>
-=======
                     <img src="images/collegeLogo.svg" className='iin' width="60" height="60" alt="IIIT Bhopal Logo" ></img>
->>>>>>> about
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -24,11 +20,7 @@ const Navbar = () => {
                             <a className="nav-link" href="#about">About Us</a>
                         </li>
                         <li className="nav-item me-2">
-<<<<<<< HEAD
-                            <a className="nav-link" href="#wru">Why recruit us?</a>
-=======
                             <a className="nav-link" href="#recruit">Why recruit us?</a>
->>>>>>> about
                         </li>
                         <li className="nav-item me-2">
                             <a className="nav-link" href="#stats">Placements</a>
