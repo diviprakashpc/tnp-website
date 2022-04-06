@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+/* for hamburger icon for menu */ 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
