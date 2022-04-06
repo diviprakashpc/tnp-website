@@ -6,9 +6,18 @@ import './Navbar.css';
 
 const Navbar = () => {
     const [change,setChange] = useState(false);
+    const button = document.getElementsByClassName("navbar-toggler");
+    console.log(button.classList);
+    const toggleClass = () => {
+        const container = document.querySelector(".container-fluid");
+        if(button){
+            container.style.backgroundColor = 'rgba(0,0,0,0.3)';
+        }else{
+            container.style.backgroundColor = 'rgba(0,0,0.8)';
+        }
+    } 
 
     const handleScroll = () => {
-console.log(window.scrollY);
     if(window.scrollY > 650){
             setChange(true);
         }else{
@@ -16,7 +25,8 @@ console.log(window.scrollY);
         }
     }
     useEffect(() => {
-      window.addEventListener('scroll',handleScroll);    
+      window.addEventListener('scroll',handleScroll);
+    //   button.addEventListener('click',toggleClass);    
       return () => {
         window.removeEventListener('scroll',handleScroll);
       }
@@ -28,7 +38,7 @@ console.log(window.scrollY);
                 <a className="navbar-brand ms-2" href="#">
                     <img src="images/collegeLogo.svg" className='navbar-logo' alt="IIIT Bhopal Logo" ></img>
                 </a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={toggleClass}>
                     <FontAwesomeIcon icon={faBars} style={{ color: "#fff"}}/>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">

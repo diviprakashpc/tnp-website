@@ -71,4 +71,91 @@
   z-index: 2;
   background-color: rgba(5, 19, 103, 0.5);
 }
+
+/* CSS for learn more button */
+.bg,
+.button {
+  position: absolute;
+  top: 28.5%;
+  left: 93.5%;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+}
+
+.bg {
+  -webkit-animation: pulse 1.2s ease infinite;
+          animation: pulse 1.2s ease infinite;
+  background: #fdfcfc;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 99;
+  border: none;
+  background: #fdfcfc;
+  background-size: 18px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button a {
+  position: absolute;
+  color: #000;
+  font-size: 17px;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* unable for 992px and down */
+@media only screen and (max-width: 992px) {
+  .bg, .button {
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1250px and up) */
+@media only screen and (min-width: 1250px) {
+  .bg, .button {
+    top: 29.5%;
+    left: 94%;
+  }
+}
 /*# sourceMappingURL=Home.css.map */

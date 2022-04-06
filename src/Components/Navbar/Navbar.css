@@ -6,7 +6,7 @@
 .container-fluid {
   -webkit-transition: all 1s;
   transition: all 1s;
-  background-color: rgba(0, 0, 0, 0.3) !important;
+  background-color: rgba(8, 8, 8, 0.8) !important;
 }
 
 /*Class to handle color change on scroll*/
