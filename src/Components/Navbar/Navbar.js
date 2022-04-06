@@ -3,10 +3,10 @@ import './Navbar.css';
 
 const Navbar = () => {
     const [change,setChange] = useState(false);
-    console.log({change});
-    const handleScroll = () => {console.log("on scroll");
+
+    const handleScroll = () => {
     console.log(window.scrollY);    
-    if(window.scrollY > 650){console.log("change to true");
+    if(window.scrollY > 650){
             setChange(true);
         }else{
             setChange(false);
@@ -20,8 +20,8 @@ const Navbar = () => {
     }, [])
     
     return (
-        <nav className={`custom-navbar ${change && 'change-color'} navbar fixed-top navbar-expand-lg navbar-dark`}>
-            <div className="container-fluid">
+        <nav className={`custom-navbar navbar fixed-top navbar-expand-lg navbar-dark`}>
+            <div className={`container-fluid ${change && 'change-color'}`}>
                 <a className="navbar-brand ms-2" href="#">
                     <img src="images/collegeLogo.svg" className='navbar-logo' alt="IIIT Bhopal Logo" ></img>
                 </a>

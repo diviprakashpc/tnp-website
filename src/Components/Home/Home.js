@@ -3,6 +3,7 @@ import './Home.css';
 function Home() {
     return (
         <div id='home'>
+        <div className='home-cover'></div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -24,9 +25,12 @@ function Home() {
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <div className='home-content-container'>
         <div className='home-content'>
+            <h4>विद्ययामृतमश्नुते</h4>
             <h1>Training and Placement Cell</h1>
             <h2>IIIT BHOPAL</h2>
+        </div>
         </div>
         </div>
     )

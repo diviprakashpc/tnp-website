@@ -1,6 +1,9 @@
 .custom-navbar {
   background-color: transparent !important;
   height: 8vh;
+}
+
+.container-fluid {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -21,16 +24,25 @@
 
 .nav-item {
   margin-right: 3rem !important;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .nav-link {
-  color: rgba(230, 228, 228, 0.9) !important;
+  color: rgba(245, 244, 244, 0.5) !important;
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .nav-link:hover {
-  color: #f8f6f6 !important;
+  color: #fff !important;
 }
 
 .nav-link,
