@@ -72,4 +72,8 @@
 .active {
   color: #fff !important;
 }
+
+.active::after {
+  width: 100%;
+}
 /*# sourceMappingURL=Navbar.css.map */
