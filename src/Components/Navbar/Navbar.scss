@@ -1,9 +1,11 @@
 .custom-navbar {
-  background-color: transparent !important;
+  // background-color: transparent !important;
+  padding-top: 0 !important;
   height: 8vh;
 }
 .container-fluid{
     transition: all 1s;
+  background-color: rgba(0,0,0,0.3) !important;
 }
 /*Class to handle color change on scroll*/
 .change-color{

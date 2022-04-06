@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Scrollspy from 'react-scrollspy';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -12,19 +13,6 @@ console.log(window.scrollY);
         }else{
             setChange(false);
         }
-
-        // if(window.scrollY < 670){
-        //     const home = document.getElementById('home-link');
-        //     const links = document.querySelectorAll('nav-link');
-        //     links.forEach((link) => link.classList.remove('active'));
-        //     home.classList.add('active');
-        // }
-        // if(window.scrollY > 650){
-        //     const home = document.getElementById('home-link');
-        //     const links = document.querySelectorAll('nav-link');
-        //     links.forEach((link) => link.classList.remove('active'));
-        //     home.classList.add('active');
-        // }
     }
     useEffect(() => {
       window.addEventListener('scroll',handleScroll);    
@@ -40,11 +28,10 @@ console.log(window.scrollY);
                     <img src="images/collegeLogo.svg" className='navbar-logo' alt="IIIT Bhopal Logo" ></img>
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <FontAwesomeIcon icon={faBars} style={{ color: "#fff"}}/>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
-                        {/* <Scrollspy items={['home','about']} currentClassName="active"> */}
                         <li className="nav-item me-2">
                             <a  id='home-link' className="nav-link" aria-current="page" href="#home">Home</a>
                         </li>
@@ -60,7 +47,6 @@ console.log(window.scrollY);
                         <li className="nav-item me-2">
                             <a id='contact-link' className="nav-link" href="#contact">Contact Us</a>
                         </li>
-                        {/* </Scrollspy> */}
                     </ul>
                 </div>
             </div>
