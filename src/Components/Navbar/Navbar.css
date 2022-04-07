@@ -4,8 +4,12 @@
 }
 
 .container-fluid {
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: transparent !important;
+}
+
+.container-fluid-color {
   background-color: rgba(8, 8, 8, 0.8) !important;
 }
 

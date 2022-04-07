@@ -5,23 +5,18 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
 
 const Navbar = () => {
+    const [onScrollChange,setOnScrollChange] = useState(false);
     const [change,setChange] = useState(false);
-    const button = document.getElementsByClassName("navbar-toggler");
-    console.log(button.classList);
+    
     const toggleClass = () => {
-        const container = document.querySelector(".container-fluid");
-        if(button){
-            container.style.backgroundColor = 'rgba(0,0,0,0.3)';
-        }else{
-            container.style.backgroundColor = 'rgba(0,0,0.8)';
-        }
+        setChange(!change);
     } 
 
     const handleScroll = () => {
-    if(window.scrollY > 650){
-            setChange(true);
+    if(window.scrollY > 350){
+            setOnScrollChange(true);
         }else{
-            setChange(false);
+            setOnScrollChange(false);
         }
     }
     useEffect(() => {
@@ -34,7 +29,7 @@ const Navbar = () => {
     
     return (
         <nav className={`custom-navbar navbar fixed-top navbar-expand-lg navbar-dark`}>
-            <div className={`container-fluid ${change && 'change-color'}`}>
+            <div className={`container-fluid ${change && 'container-fluid-color'}  ${onScrollChange && 'change-color'}`}>
                 <a className="navbar-brand ms-2" href="#">
                     <img src="images/collegeLogo.svg" className='navbar-logo' alt="IIIT Bhopal Logo" ></img>
                 </a>
