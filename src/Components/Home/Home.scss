@@ -1,18 +1,8 @@
-// .carousel{
-//     z-index: 1;
-//     position: absolute;
-//     left: 0;
-//     top: 0;
-
-//     min-width: 100%;
-//     min-height: 100vh;
-// }
-
-
 $white: #fdfcfc;
-// @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
-//   transition: $property $duration $ease;
-// }
+
+#home{
+    position: relative;
+}
 
 .carousel-item > img{
     width: 100%;
@@ -33,15 +23,13 @@ $white: #fdfcfc;
 }
 
 .home-content{
-    font-family: "montserrat-bold", serif;;
     text-align: center;
     color: rgb(245, 247, 250);
-    position: absolute;
-    // left: 32%;
-    // top: 40%;
-    // z-index: 3;
     padding: 2rem;
     background-color: rgba(249, 250, 250, 0.2);
+    border-radius: 1.9rem;
+    height: 20rem;
+    width: 50rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,114 +57,12 @@ $white: #fdfcfc;
     background-color: rgba(5, 19, 103,0.5);
 }
 
-/* CSS for learn more button */
-// button {
-//     z-index: 6;
-//     position: absolute;
-//     top: 17%;
-//     left: 78%;
-//     transform: rotate(270deg);
-//     display: inline-block;
-//     cursor: pointer;
-//     outline: none;
-//     border: 0;
-//     vertical-align: middle;
-//     text-decoration: none;
-//     background: transparent;
-//     padding: 0;
-//     font-size: inherit;
-//     font-family: inherit;
-//     &.learn-more {
-//       width: 12rem;
-//       height: auto;
-//       .circle {
-//         @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-//         position: relative;
-//         display: block;
-//         margin: 0;
-//         width: 3rem;
-//         height: 3rem;
-//         background: $black;
-//         border-radius: 1.625rem;
-//         .icon {
-//           @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-//           position: absolute;
-//           top: 0;
-//           bottom: 0;
-//           margin: auto;
-//           background: $white;
-//           &.arrow {
-//             @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-//             left: 0.625rem;
-//             width: 1.125rem;
-//             height: 0.125rem;
-//             background: none;
-//             &::before {
-//               position: absolute;
-//               content: '';
-//               top: -0.25rem;
-//               right: 0.0625rem;
-//               width: 0.625rem;
-//               height: 0.625rem;
-//               border-top: 0.125rem solid #fff;
-//               border-right: 0.125rem solid #fff;
-//               transform: rotate(45deg);
-//             }
-//           }
-//         }
-//       }
-//       .button-text {
-//         @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         right: 0;
-//         bottom: 0;
-//         padding: 0.75rem 0;
-//         margin: 0 0 0 1.85rem;
-//         color: $black;
-//         font-weight: 700;
-//         line-height: 1.6;
-//         text-align: center;
-//         text-transform: uppercase;
-//       }
-//     }
-//     &:hover {
-//       .circle {
-//         width: 100%;
-//         .icon {
-//           &.arrow {
-//           background: $white;
-//           transform: translate(1rem, 0);
-//           }
-//         }
-//       }
-//       .button-text {
-//         color: $white;
-//       }
-//     }
-//   }
-  
-//   @supports (display: grid) {
-//     body {
-//       display: grid;
-//     grid-template-columns: repeat(4, 1fr);
-//     grid-gap: 0.625rem;
-//     grid-template-areas: ". main main ." ". main main .";
-//     }
-    
-//     #container {
-//       grid-area: main;
-//       align-self: center;
-//       justify-self: center;
-    
-// }
-// }
+// -- Down Button --
 .bg,
 .button {
   position: absolute;
-  top: 28.5%;
-  left: 93.5%;
+  bottom: 3%;
+  right: 2.5%;
   width: 3rem;
   height: 3rem;
   border-radius: 100%;
@@ -219,26 +105,85 @@ $white: #fdfcfc;
     }
   }
 
-  /* unable for 992px and down */
-@media only screen and (max-width: 992px) {
-    .bg,.button{
+  /* unable for 600px and down */
+@media only screen and (max-width: 600px) {
+    .bg,.button,.carousel-control-prev,.carousel-control-next{
         display: none;        
     }
 }
 
 
-// /* Large devices (laptops/desktops, 992px and up) */
-// @media only screen and (min-width: 992px) {
+// /* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+    .carousel-control-prev,.carousel-control-next{
+        display: none;        
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1250px and up) */
+// @media only screen and (min-width: 1250px) {
 //     .bg,.button{
-//         top: 38rem;
+//         top: 29.5%;
 //         left: 94%;
 //     }
 // }
 
-/* Extra large devices (large laptops and desktops, 1250px and up) */
-@media only screen and (min-width: 1250px) {
-    .bg,.button{
-        top: 29.5%;
-        left: 94%;
-    }
+
+// {/* --Social Media Buttons-- */}
+.flex-center {
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-links {
+	display: flex;
+    position: absolute;
+    bottom: 2%;
+    left: 4%;
+    z-index: 5;
+    flex-direction: row;
+}
+
+.social-btn {
+	cursor: pointer;
+	height: 2rem;
+	width: 2rem;
+	font-family: 'Titillium Web', sans-serif;
+	color: #333;
+	border-radius: 10px;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	background: white;
+	margin: 5px;
+	transition: 1s;
+}
+
+.social-btn span {
+	width: 0px;
+	overflow: hidden;
+	transition: 1s;
+	text-align: center;
+}
+
+.social-btn:hover {
+	width: 6rem;
+	border-radius: 5px;
+}
+
+.social-btn:hover span {
+	padding: 2px;
+	width: max-content;
+}
+
+#twitter svg {
+	fill: #1da1f2;
+}
+
+#linkedin svg {
+	fill: #0e76a8;
+}
+
+#github {
+	fill: #333;
 }

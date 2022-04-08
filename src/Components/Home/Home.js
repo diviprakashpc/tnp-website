@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faF } from '@fortawesome/free-solid-svg-icons';
 function Home() {
     return (
         <div id='home'>
@@ -29,21 +29,34 @@ function Home() {
             </div>
             <div className='home-content-container'>
                 <div className='home-content'>
-                    <h4>विद्ययामृतमश्नुते</h4>
+                    <h4>विद्यया . अमृतम . श्नुते</h4>
                     <h1>Training and Placement Cell</h1>
                     <h2>IIIT BHOPAL</h2>
                 </div>
             </div>
 
-            {/* <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">Learn More</span>
-                </button> */}
-            <div class="container">
+            {/* -- Down button -- */}
+            <div class="down-button-container">
                 <div class="bg"></div>
                 <div class="button"><a href="#about"><FontAwesomeIcon icon={faChevronDown} /></a></div>
+            </div>
+
+            {/* --Social Media Buttons-- */}
+            <div class='social-links'>
+                <div class='social-btn flex-center' id="github">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class='social-btn flex-center' id="twitter">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+
+                <div class='social-btn flex-center' id="linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <div class='social-btn flex-center' id="github">
+                    <i class="fa-brands fa-skype"></i>
+                </div>
             </div>
         </div>
     )

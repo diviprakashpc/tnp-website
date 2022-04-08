@@ -28,8 +28,8 @@ const Navbar = () => {
     }, [])
     
     return (
-        <nav className={`custom-navbar navbar fixed-top navbar-expand-lg navbar-dark`}>
-            <div className={`container-fluid ${change && 'container-fluid-color'}  ${onScrollChange && 'change-color'}`}>
+        <nav className={`custom-navbar navbar fixed-top navbar-expand-lg navbar-dark ${onScrollChange && 'change-color'}`}>
+            <div className={`container-fluid ${change && 'container-fluid-color'}`}>
                 <a className="navbar-brand ms-2" href="#">
                     <img src="images/collegeLogo.svg" className='navbar-logo' alt="IIIT Bhopal Logo" ></img>
                 </a>
