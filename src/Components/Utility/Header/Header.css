@@ -1,0 +1,13 @@
+.header {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  color: #5555cc;
+  text-align: right;
+  margin-top: 3rem;
+}
+
+.alignLeft {
+  text-align: left;
+}
+/*# sourceMappingURL=Header.css.map */
