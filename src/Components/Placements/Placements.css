@@ -1,0 +1,28 @@
+.placements {
+  background-color: #effafa;
+  margin: 2.5rem;
+  border: 1px solid #e2dfdf;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 10px 2px #e2dfdf;
+          box-shadow: 0 0 10px 2px #e2dfdf;
+  padding: 2rem 0 0 2rem;
+}
+
+.placements > h1 {
+  font-weight: normal;
+  margin-bottom: 3.5rem;
+}
+
+.placements .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem 0;
+}
+/*# sourceMappingURL=Placements.css.map */
