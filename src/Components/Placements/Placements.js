@@ -1,4 +1,5 @@
 import React from 'react'
+import Recruiters from '../Recruiters/Recruiters'
 // import Header from '../Utility/Header/Header'
 import StatsCard from '../Utility/StatsCard/StatsCard'
 import './Placements.css'
@@ -12,6 +13,7 @@ function Placements() {
             <StatsCard />
             <StatsCard />
         </div>
+        <Recruiters />
     </div>
   )
 }

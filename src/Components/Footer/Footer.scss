@@ -1,0 +1,38 @@
+.footer-container{
+    background-color: #051367;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    color: #fff;
+    font-size: 0.8rem;
+    & > .footerDetail{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        & > img{
+            width: 8rem;
+            height: 8rem;
+        }
+        & > .footerHeading{
+            font-size: 1.2rem;
+            padding-bottom: 4px;
+            position: relative;
+        }
+        & > .footerHeading::after{
+            width: 50px;
+            background: #fff;
+            opacity: 0.2;
+            height: 1px;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        & > .addressMap{
+            margin-top: 1rem;
+        }
+    }
+}
+

@@ -1,0 +1,58 @@
+.footer-container {
+  background-color: #051367;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.footer-container > .footerDetail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer-container > .footerDetail > img {
+  width: 8rem;
+  height: 8rem;
+}
+
+.footer-container > .footerDetail > .footerHeading {
+  font-size: 1.2rem;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.footer-container > .footerDetail > .footerHeading::after {
+  width: 50px;
+  background: #fff;
+  opacity: 0.2;
+  height: 1px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-container > .footerDetail > .addressMap {
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=Footer.css.map */

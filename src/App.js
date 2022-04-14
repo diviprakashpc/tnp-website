@@ -1,19 +1,17 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './Components/Navbar/Navbar';
-import Home from './Components/Home/Home';
-import About from './Components/About/About';
-import Recruit from './Components/Recruit/Recruit';
-import Placements from './Components/Placements/Placements';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ContactUs from "./Components/ContactPage/ContactUs";
+import Homepage from "./Components/Homepage/Homepage";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Home />
-      <About />
-      <Recruit />
-      <Placements />
+      <Routes>
+        <Route path="/" element={<Homepage/>}></Route>
+        <Route path="/ContactUs" element={<ContactUs />}></Route>
+        <Route path="*" element={<h1>Error</h1>}></Route>
+      </Routes>
     </div>
   );
 }

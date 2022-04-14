@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
+import { Outlet, Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [onScrollChange,setOnScrollChange] = useState(false);
@@ -51,11 +52,13 @@ const Navbar = () => {
                             <a id='stats-link' className="nav-link" href="#stats">Placements</a>
                         </li>
                         <li className="nav-item me-2">
-                            <a id='contact-link' className="nav-link" href="#contact">Contact Us</a>
+                            {/* <a id='contact-link' className="nav-link" href="#contact"></a> */}
+                            <Link to="/ContactUs" className="nav-link">Contact Us</Link>
                         </li>
                     </ul>
                 </div>
             </div>
+            <Outlet />
         </nav>
 
     )

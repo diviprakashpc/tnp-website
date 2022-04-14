@@ -1,0 +1,16 @@
+.contactHeader {
+  background-color: #0051ff;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.contactHeader > a {
+  color: white;
+  margin-left: 1rem;
+}
+
+.contactHeader > a > i {
+  height: 0.7rem;
+  width: 0.7rem;
+}
+/*# sourceMappingURL=ContactUs.css.map */
