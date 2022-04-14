@@ -1,18 +1,36 @@
 $bgcolor : #fff;
-
+.about{
+//     background: #D3CCE3;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right bottom, rgb(230, 226, 253), #f3f2f7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding-top: 4.5rem;
+}
 .aboutUs{
     background-color: $bgcolor;
     margin: 2.5rem;
+    margin-top: 0;
+    // padding: 2.5rem;
     border-radius: 1.4rem;
     padding: 1.5rem 2rem 2rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 1.96px 0.88px;
-    h2{
+    & > h2{
         margin-bottom: 1.7rem;
         span{
             border-bottom: 4px solid rgb(38, 93, 245);
             border-radius: .2rem;
             padding-bottom: 0.2rem;
         }
+    }
+    & > p{
+        font-size: 1.3rem;
+        margin-left: 3.8rem;
+        margin-top: 2rem;
+        & > a{
+            color: #2FA4FF;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
     }
 }
 

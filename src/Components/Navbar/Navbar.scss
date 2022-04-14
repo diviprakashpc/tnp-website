@@ -2,7 +2,7 @@
   // background-color: transparent !important;
   padding-top: 0 !important;
   height: 10vh;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .container-fluid{
     transition: all 0.3s;
@@ -14,7 +14,9 @@
 }
 /*Class to handle color change on scroll*/
 .change-color{
-    background-color: rgb(93, 139, 244) !important;
+    // background-color: rgb(1, 20, 133) !important;
+    background-color: #2d3267 !important;
+
 }
 
 .navbar-logo {

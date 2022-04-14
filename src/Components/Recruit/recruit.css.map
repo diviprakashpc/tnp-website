@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAMA,AAAA,QAAQ,CAAA;EACJ,gBAAgB,EAAE,OAAkB;EACpC,OAAO,EAAE,IAAI;EAPb,OAAO,EAAE,IAAI;EACb,cAAc,EAOA,MAAM;EANpB,eAAe,EAMM,aAAa;EALlC,WAAW,EAJoB,MAAM;EAUrC,MAAM,EAAE,MAAO;EACf,OAAO,EAAE,SAAS;CAOrB;;AAZD,AAMI,QANI,GAMA,EAAE,CAAA;EACF,aAAa,EAAE,IAAI;CACtB;;AARL,AASI,QATI,GASA,CAAC,CAAA;EACD,SAAS,EAAE,MAAM;CACpB",
     "sources": [
-        "recruit.scss"
+        "Recruit.scss"
     ],
     "names": [],
-    "file": "recruit.css"
+    "file": "Recruit.css"
 }

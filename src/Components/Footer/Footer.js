@@ -4,7 +4,7 @@ function Contact() {
     return (
         <div className='footer-container' >
             {/* <h2>Contact US</h2> */}
-            <div className='footerDetail'>
+            <div className='footerDetail footerLogo'>
                 <img src="images/collegeLogo.svg"></img>
             </div>
             <div className='footerDetail'>
@@ -17,9 +17,60 @@ function Contact() {
             </div>
             <div className='footerDetail'>
                 <p className='footerHeading'>Contact Us</p>
+                <ul>
+                    <li className='contact-item'>
+                        <div className='contact-item-name'>Prof. Ajay Srivastava(TPO)</div>
+                        <ul>
+                            <li className='contact-item-detail'>
+                        <a href='mailto:Tpo@iiitbhopal.ac.in' className='contact-item-link'><i class="contact-icon fa-solid fa-envelope"></i>Tpo@iiitbhopal.ac.in</a>
+
+                            </li>
+                            <li className='contact-item-detail'>
+                        <a href='tel:7554051953' className='contact-item-link' title='TPO contact'><i class="contact-icon fa-solid fa-phone"></i> 75540 51953</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li className='contact-item'>
+                        <div className='contact-item-name'>Ayush Choudhary(Student Coordinator)</div>
+                        <ul>
+                            <li className='contact-item-detail'>
+                        <a href='mailto:tpwiiitb@gmail.com' className='contact-item-link'><i class="contact-icon fa-solid fa-envelope"></i>tpwiiitb@gmail.com</a>
+
+                            </li>
+                            <li className='contact-item-detail'>
+                        <a href='tel:70007 28910' className='contact-item-link'><i class="contact-icon fa-solid fa-phone"></i> 70007 28910</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li className='contact-item'>
+                        <div className='contact-item-name'>IIIT BHOPAL Office</div>
+                        <ul>
+                            <li className='contact-item-detail'>
+                        <a href='mailto:info@iiitbhopal.ac.in' className='contact-item-link'><i class="contact-icon fa-solid fa-envelope"></i>info@iiitbhopal.ac.in</a>
+
+                            </li>
+                            <li className='contact-item-detail'>
+                        <a href='tel:7554051950' className='contact-item-link'><i class="contact-icon fa-solid fa-phone"></i>75540 51950</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <div className='footerDetail'>
-                <p className='footerHeading'>Quick Links</p>
+            <div className='footerDetail quickLinks'>
+                <p className='footerHeading quickLink-heading'>Quick Links</p>
+                <div>
+                <div className='quickLink-container'><a href='https://drive.google.com/file/d/136FL1gnE5N9zKVumUCUXNIls29Gldo7t/view?usp=sharing' target='_blank' className='quickLink'><i class="quickLink-icon fa-solid fa-square-arrow-up-right"></i>Brochure</a></div>
+                <div className='quickLink-container'>
+                <a href='https://drive.google.com/file/d/1jd5XaQOyNNYJyp2-UpTStHZ1bh8z4OHH/view?usp=sharing' target='_blank' className='quickLink'><i class="quickLink-icon fa-solid fa-square-arrow-up-right"></i>Job Notification Form</a>
+                </div>
+                <div className='quickLink-container'>
+                <a href='https://forms.gle/R8o6mBNeaRd3L8jGA' target='_blank' className='quickLink'><i class="quickLink-icon fa-solid fa-square-arrow-up-right"></i>Reach out to us</a>
+
+                </div>
+                </div>
             </div>
         </div>
     )

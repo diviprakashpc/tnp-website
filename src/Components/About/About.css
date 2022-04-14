@@ -1,20 +1,37 @@
+.about {
+  padding-top: 4.5rem;
+}
+
 .aboutUs {
   background-color: #fff;
   margin: 2.5rem;
+  margin-top: 0;
   border-radius: 1.4rem;
   padding: 1.5rem 2rem 2rem 2rem;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 1.96px 0.88px;
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 1.96px 0.88px;
 }
 
-.aboutUs h2 {
+.aboutUs > h2 {
   margin-bottom: 1.7rem;
 }
 
-.aboutUs h2 span {
+.aboutUs > h2 span {
   border-bottom: 4px solid #265df5;
   border-radius: .2rem;
   padding-bottom: 0.2rem;
+}
+
+.aboutUs > p {
+  font-size: 1.3rem;
+  margin-left: 3.8rem;
+  margin-top: 2rem;
+}
+
+.aboutUs > p > a {
+  color: #2FA4FF;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .director-desk {
