@@ -8,9 +8,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -35,7 +35,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 20vw;
+  height: 20rem;
 }
 
 .footer-container > .footerDetail > img {
@@ -58,10 +58,6 @@
   position: absolute;
   bottom: 0;
   left: 0;
-}
-
-.footer-container > .footerDetail > .footerLogo {
-  height: 100%;
 }
 
 .footer-container > .footerDetail > ul li {
@@ -92,6 +88,15 @@
 .footer-container > .footerDetail > div > .quickLink-container > a > .quickLink-icon {
   color: #fff;
   padding-right: 0.7rem;
+}
+
+.footer-container > .footerLogo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-container > .quickLinks {
@@ -145,5 +150,50 @@
 .contact-icon {
   padding-right: 0.7rem;
   color: #bdbcbc;
+}
+
+@media only screen and (max-width: 1050px) {
+  .footer-container {
+    padding: 0.8rem;
+    font-size: 0.67rem;
+  }
+  .footer-container .footerLogo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-container > .footerDetail {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-container > .footerDetail > img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .footer-container > .footerDetail > .footerHeading {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  .footer-container > .footerDetail > div > .quickLink-container {
+    width: 13rem;
+    padding-bottom: 0.5rem;
+  }
+  .footer-container > .quickLinks > div {
+    font-size: 0.1rem;
+    color: #424242;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .footerDetail {
+    margin-top: 1rem;
+  }
+  .footer-container .footerLogo {
+    height: 150px;
+  }
 }
 /*# sourceMappingURL=Footer.css.map */
