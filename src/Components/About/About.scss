@@ -39,12 +39,11 @@ $bgcolor : #fff;
 // background: linear-gradient(to right bottom, rgb(230, 226, 253), #f3f2f7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 padding-top: 4.5rem;
 padding-bottom: 4rem;
-background-image: url("../../../public/images/image-1.jpg");
+background-image: url("../../../public/images/image-3.jpg");
 }
 .aboutUs{
     background-color: $bgcolor;
     margin: 2.5rem;
-    margin-top: 0;
     // padding: 2.5rem;
     border-radius: 1.4rem;
     padding: 1.5rem 2rem 2rem 2rem;
@@ -95,10 +94,14 @@ background-image: url("../../../public/images/image-1.jpg");
         border: 2px solid #d3d4db;
         border-radius: 2rem;     
         box-shadow: rgba(175, 174, 174, 0.3) 0px 19px 38px, rgba(165, 161, 161, 0.22) 0px 15px 12px;
+        & > img{
+            border-radius: 2rem;     
+    
+            }
     }
     .director-message{
-    background-color: $bgcolor;
-
+    background-color: #606bcebb;
+        color: #fff;
         margin-top: 1rem;
         max-height: 400px;
         margin-right: 3rem;
@@ -138,7 +141,7 @@ background-image: url("../../../public/images/image-1.jpg");
         font-size: 3.3rem;
     }
     .director-name{
-        color: rgb(155, 153, 153);
+        color: rgb(230, 227, 227);
         text-align: end;
         font-weight: bold;
     }
@@ -168,15 +171,21 @@ background-image: url("../../../public/images/image-1.jpg");
         margin: 0rem 6rem 0 2rem;
         position: relative;
         height: 13rem;
+        // padding: 1rem;
         background-color: rgba(255, 255, 255, 0.6);
         border: 2px solid #d3d4db;
         border-radius: 2rem;     
         box-shadow: rgba(175, 174, 174, 0.3) 0px 19px 38px, rgba(165, 161, 161, 0.22) 0px 15px 12px;
+        & > img{
+        border-radius: 2rem;
+        width: 12rem;
+        height: 13rem;     
+        }
     }
 
     .tpo-message{
-    background-color: $bgcolor;
-
+    background-color: #606bcebb;
+        color: #fff;
         margin-top: 1rem;
         max-height: 400px;
         margin-right: 3rem;
@@ -216,8 +225,99 @@ background-image: url("../../../public/images/image-1.jpg");
         font-size: 3.3rem;
     }
     .tpo-name{
-        color: rgb(155, 153, 153);
+        color: rgb(224, 221, 221);
         text-align: end;
         font-weight: bold;
+    }
+}
+
+
+@media only screen and (max-width:700px){
+    .about{
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        .aboutUs{
+            margin: 1rem 1.3rem 0rem 0.8rem;
+            padding: 1.5rem 0.5rem 0.5rem 1rem;
+            & > h2{
+                margin-bottom: 1rem;
+                font-size: 1.3rem;
+            }    
+            & > p{
+                font-size: 1rem;
+                margin-left: 0rem;
+                padding-right: 0.6rem;
+                margin-top: 1.5rem;
+                text-align: justify;
+                & > a{
+                    color: #2FA4FF;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+
+            }
+        }
+    }
+    .director-desk{
+        margin: 2rem 1rem;
+        h2{
+            font-size: 1.3rem;
+        }
+        .director-content{
+            // background-color: $bgcolor;
+                display: flex;
+                margin-top: 2rem;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        }
+        .director-image{
+            margin: 0;
+        }
+        .director-message{
+            margin-top: 2rem;
+            height: 300px;
+            width: 100%;
+            margin-right: 0;
+            font-size: 1rem;
+            text-align: justify;
+            padding: 1rem 1rem 0 1rem;
+        }
+        .quote::before, .quote::after{
+            font-size: 2.6rem;
+        }
+    }
+    .tpo-desk{
+        margin: 3rem 1rem 2rem 1rem;
+        h2{
+            font-size: 1.3rem;
+        }
+        .tpo-content{
+            // background-color: $bgcolor;
+                display: flex;
+                margin-top: 2rem;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        }
+        .tpo-image{
+            margin: 0;
+        }
+        .tpo-message{
+            margin-top: 2rem;
+            height: 300px;
+            width: 100%;
+            margin-right: 0;
+            font-size: 1rem;
+            text-align: justify;
+            padding: 1rem 1rem 0 1rem;
+        }
+        .quote::before, .quote::after{
+            font-size: 2.6rem;
+        }
     }
 }

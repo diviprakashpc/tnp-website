@@ -6,6 +6,9 @@
 *::before,*::after{
   box-sizing: inherit;
 }
+html{
+  min-width: 100%;
+}
 body{
   position: relative;
   scroll-behavior: smooth;
