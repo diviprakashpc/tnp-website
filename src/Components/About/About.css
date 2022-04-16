@@ -1,5 +1,7 @@
 .about {
   padding-top: 4.5rem;
+  padding-bottom: 4rem;
+  background-image: url("../../../public/images/image-1.jpg");
 }
 
 .aboutUs {
@@ -17,7 +19,7 @@
 }
 
 .aboutUs > h2 span {
-  border-bottom: 4px solid #265df5;
+  border-bottom: 4px solid #2FA4FF;
   border-radius: .2rem;
   padding-bottom: 0.2rem;
 }
@@ -35,12 +37,11 @@
 }
 
 .director-desk {
-  background-color: #fff;
   margin: 4rem 4.4rem;
 }
 
 .director-desk h2 span {
-  border-bottom: 4px solid #265df5;
+  border-bottom: 4px solid #2FA4FF;
   border-radius: .2rem;
   padding-bottom: 0.4rem;
 }
@@ -59,24 +60,55 @@
 }
 
 .director-desk .director-image {
+  position: relative;
   margin: 0rem 6rem 0 2rem;
   height: 13rem;
-  border-radius: 1rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid #d3d4db;
+  border-radius: 2rem;
+  -webkit-box-shadow: rgba(175, 174, 174, 0.3) 0px 19px 38px, rgba(165, 161, 161, 0.22) 0px 15px 12px;
+          box-shadow: rgba(175, 174, 174, 0.3) 0px 19px 38px, rgba(165, 161, 161, 0.22) 0px 15px 12px;
 }
 
 .director-desk .director-message {
+  background-color: #fff;
   margin-top: 1rem;
   max-height: 400px;
   margin-right: 3rem;
-  font-size: 1.19rem;
+  font-size: 1.3rem;
   overflow-y: scroll;
   border: 1px solid #e9e7e7;
   border-radius: 2rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   padding: 1rem;
   -webkit-box-shadow: 0 0 0.4rem 0rem #929191;
           box-shadow: 0 0 0.4rem 0rem #929191;
+}
+
+.director-desk .director-message::-webkit-scrollbar {
+  width: 5px;
+  height: 30px;
+  border-radius: 1rem;
+}
+
+.director-desk .director-message::-webkit-scrollbar-thumb {
+  background: #0680d1;
+  border-radius: 1rem;
+}
+
+.director-desk .director-message::-webkit-scrollbar-thumb:hover {
+  background: #0920e7;
+}
+
+.director-desk .director-message::-webkit-scrollbar-track {
+  background: #aaa7a7;
+  border-radius: 1rem;
+}
+
+.director-desk .director-message {
+  scrollbar-face-color: #0680d1;
+  scrollbar-track-color: #aaa7a7;
 }
 
 .director-desk .quote::before {
@@ -89,7 +121,7 @@
   left: 0.1rem;
   top: 0.8rem;
   color: #ccc;
-  font-size: 3rem;
+  font-size: 3.3rem;
 }
 
 .director-desk .quote::after {
@@ -102,7 +134,7 @@
   left: 0.1rem;
   top: 0.8rem;
   color: #ccc;
-  font-size: 3rem;
+  font-size: 3.3rem;
 }
 
 .director-desk .director-name {
@@ -122,7 +154,7 @@
 }
 
 .tpo-desk h2 span {
-  border-bottom: 4px solid #265df5;
+  border-bottom: 4px solid #2FA4FF;
   border-radius: .2rem;
   padding-bottom: 0.4rem;
 }
@@ -145,24 +177,56 @@
 }
 
 .tpo-desk .tpo-image {
+  z-index: 10;
   margin: 0rem 6rem 0 2rem;
+  position: relative;
   height: 13rem;
-  border-radius: 1rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid #d3d4db;
+  border-radius: 2rem;
+  -webkit-box-shadow: rgba(175, 174, 174, 0.3) 0px 19px 38px, rgba(165, 161, 161, 0.22) 0px 15px 12px;
+          box-shadow: rgba(175, 174, 174, 0.3) 0px 19px 38px, rgba(165, 161, 161, 0.22) 0px 15px 12px;
 }
 
 .tpo-desk .tpo-message {
+  background-color: #fff;
   margin-top: 1rem;
   max-height: 400px;
   margin-right: 3rem;
-  font-size: 1.19rem;
+  font-size: 1.3rem;
   overflow-y: scroll;
   border: 1px solid #e9e7e7;
   border-radius: 2rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   padding: 1rem;
   -webkit-box-shadow: 0 0 0.4rem 0rem #929191;
           box-shadow: 0 0 0.4rem 0rem #929191;
+}
+
+.tpo-desk .tpo-message::-webkit-scrollbar {
+  width: 5px;
+  height: 30px;
+  border-radius: 1rem;
+}
+
+.tpo-desk .tpo-message::-webkit-scrollbar-thumb {
+  background: #0680d1;
+  border-radius: 1rem;
+}
+
+.tpo-desk .tpo-message::-webkit-scrollbar-thumb:hover {
+  background: #0920e7;
+}
+
+.tpo-desk .tpo-message::-webkit-scrollbar-track {
+  background: #aaa7a7;
+  border-radius: 1rem;
+}
+
+.tpo-desk .tpo-message {
+  scrollbar-face-color: #0680d1;
+  scrollbar-track-color: #aaa7a7;
 }
 
 .tpo-desk .quote::before {
@@ -175,7 +239,7 @@
   left: 0.1rem;
   top: 0.8rem;
   color: #ccc;
-  font-size: 3rem;
+  font-size: 3.3rem;
 }
 
 .tpo-desk .quote::after {
@@ -188,7 +252,7 @@
   left: 0.1rem;
   top: 0.8rem;
   color: #ccc;
-  font-size: 3rem;
+  font-size: 3.3rem;
 }
 
 .tpo-desk .tpo-name {
