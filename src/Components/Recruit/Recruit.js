@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 function Recruit() {
     let heading, content;
     useEffect(() => {
-        Aos.init({ duration: 1000 });
+        Aos.init({ duration: 500 });
     }, [])
     return (
         <div id="recruit" className='recruit'>
@@ -27,7 +27,7 @@ function Recruit() {
             <Header heading={"Finest curriculum"} alignLeft={false}/>
             <Container content={"The Institute offers undergraduate programs in Computer Science & Engineering and Electronics & Communications Engineering. IIIT Bhopal is well connected with peer institutes and industries to enhance research and development, and enrich its educational programs. The Institute has laid out a balanced curriculum with a strong emphasis on practical skills along with theory; and encourages innovations and co-curricular activities. IIIT Kota provides an environment that nurtures leaders in addition to industry-ready engineers."} />
             </div>
-            <div data-aos="fade-left"className='recruit-section'>
+            <div data-aos="fade-right"className='recruit-section'>
             <Header heading={"All Around Development"} alignLeft={true}/>
             <Container content={"The Institute is committed to providing the students opportunities to develop an all-rounded personality. Many essential soft skills, including communication, conflict resolution, creative problem solving, strategic thinking, team building, are inculcated in the students through various classroom and co-curricular activities. Also, there are open-ended learning components in the curriculum that enable the students to explore their creative sides and develop innovative solutions and projects."} />
             </div>

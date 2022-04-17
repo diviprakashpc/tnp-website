@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 function Footer() {
     useEffect(() => {
-        Aos.init({ duration: 1000 });
+        Aos.init({ duration: 500 });
     }, [])
     
 
