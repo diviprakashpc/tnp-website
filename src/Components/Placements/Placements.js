@@ -17,13 +17,13 @@ function Placements() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="..." className="d-block w-100" alt="..." />
+            <img src="Placement_img/IMG_1.svg" className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src="..." className="d-block w-100" alt="..." />
+            <img src="Placement_img/IMG_2.svg" className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src="..." className="d-block w-100" alt="..." />
+            <img src="Placement_img/IMG_3.svg" className="d-block w-100" alt="..." />
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
