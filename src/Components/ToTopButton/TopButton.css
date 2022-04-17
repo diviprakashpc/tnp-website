@@ -1,0 +1,38 @@
+.top-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: hidden;
+  position: fixed;
+  background: #070707;
+  /* fallback for old browsers */
+  top: 91%;
+  left: 94%;
+  width: 51px;
+  height: 48px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+  border-radius: 2rem;
+  text-decoration: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.makeVisible {
+  visibility: visible;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+a:hover, a:hover i {
+  background-color: #fff;
+  color: #070707;
+}
+/*# sourceMappingURL=TopButton.css.map */

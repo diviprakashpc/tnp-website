@@ -5,6 +5,7 @@ import About from "../About/About";
 import Recruit from "../Recruit/Recruit";
 import Placements from "../Placements/Placements";
 import Footer from "../Footer/Footer";
+import TopButton from "../ToTopButton/TopButton";
 
 export default function Homepage() {
   return (
@@ -15,6 +16,7 @@ export default function Homepage() {
       <Recruit />
       <Placements />
       <Footer />
+      <TopButton />
     </div>
   );
 }
