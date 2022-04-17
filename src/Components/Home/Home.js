@@ -43,19 +43,21 @@ function Home() {
 
             {/* --Social Media Buttons-- */}
             <div class='social-links'>
-                <div class='social-btn flex-center' id="github">
+                <div class='social-btn flex-center' id="gmail">
                     <i class="fa-solid fa-envelope"></i>
+                    <span><a href='mailto:tpwiiitb@gmail.com' target='_blank'>@tpwiiitb</a></span>
+                </div>
+                <div class='social-btn flex-center' id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span><a href='https://www.facebook.com/iiitbhopalofficial' target='_blank'>@iiitbhopal</a></span>
                 </div>
                 <div class='social-btn flex-center' id="twitter">
-                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <span><a href='https://twitter.com/iiitbhopal' target='_blank'>@tpwiiitb</a></span>
                 </div>
-
                 <div class='social-btn flex-center' id="linkedin">
                     <i class="fa-brands fa-linkedin-in"></i>
-                </div>
-
-                <div class='social-btn flex-center' id="github">
-                    <i class="fa-brands fa-skype"></i>
+                    <span><a href='https://www.linkedin.com/in/tnp-iiitbhopal/' target='_blank'>@tpwiiitb</a></span>
                 </div>
             </div>
         </div>

@@ -2,6 +2,7 @@
   background-color: #0051ff;
   width: 100%;
   padding: 0.5rem;
+  position: relative;
 }
 
 .contactHeader > a {
@@ -12,5 +13,179 @@
 .contactHeader > a > i {
   height: 0.7rem;
   width: 0.7rem;
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team > h3 {
+  margin-top: 2rem;
+}
+
+.makeFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-container {
+  margin: 0 1rem 0 1rem;
+}
+
+.contact-container .contact-cards {
+  position: relative;
+  width: 14rem;
+  height: 15rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2196f3), color-stop(30%, #2196f3), color-stop(30%, #1d3548), to(#1d3548));
+  background: linear-gradient(#2196f3, #2196f3 30%, #1d3548 30%, #1d3548);
+  margin: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.contact-container .contact-cards > .imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 1000;
+  overflow: hidden;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  border-radius: 20px;
+}
+
+.contact-container .contact-cards > .imgBox > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact-container .contact-cards > .contact-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact-container .contact-cards > .contact-content > .contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-container .contact-cards > .contact-content > .contact-details > h2 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact-container .contact-cards > .contact-content > .contact-details > .contact-icons {
+  width: 100%;
+  padding: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+
+.contact-container .contact-cards > .contact-content > .contact-details > .contact-icons > li {
+  list-style: none;
+  margin: 0 4px;
+}
+
+.contact-container .contact-cards > .contact-content > .contact-details > .contact-icons > li > a {
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #294d69;
+  border-radius: 50%;
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact-container .contact-cards > .contact-content > .contact-details > .contact-icons > li > a:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.contact-container .contact-cards:hover .contact-content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.contact-container .contact-cards:hover .imgBox {
+  -webkit-transform: translateY(30px) scale(0.5);
+          transform: translateY(30px) scale(0.5);
 }
 /*# sourceMappingURL=ContactUs.css.map */

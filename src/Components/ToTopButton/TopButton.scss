@@ -10,9 +10,9 @@
 // background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
 // background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    top: 91%;
+    bottom: 3%;
     
-    left: 94%;
+    right: 3%;
     width: 51px;
     height: 48px;
     justify-content: center;
@@ -27,7 +27,7 @@
     visibility: visible;
     transition: all 1s;
 }
- a:hover, a:hover i{
+ .top-button:hover, .top-button:hover i{
       background-color: #fff;
     color: #070707;
   }

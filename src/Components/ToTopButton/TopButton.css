@@ -6,8 +6,8 @@
   position: fixed;
   background: #070707;
   /* fallback for old browsers */
-  top: 91%;
-  left: 94%;
+  bottom: 3%;
+  right: 3%;
   width: 51px;
   height: 48px;
   -webkit-box-pack: center;
@@ -31,7 +31,7 @@
   transition: all 1s;
 }
 
-a:hover, a:hover i {
+.top-button:hover, .top-button:hover i {
   background-color: #fff;
   color: #070707;
 }
