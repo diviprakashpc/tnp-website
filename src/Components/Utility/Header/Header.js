@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css'
 function Header({ heading, alignLeft }) {
   return (
-    <h2 className={`header + ${alignLeft && 'alignLeft'}`}>{heading}</h2>
+    <div className={`header-container ${alignLeft && 'alignLeft'}`}><h2 className='header'><span>{heading}</span></h2></div>
   )
 }
 

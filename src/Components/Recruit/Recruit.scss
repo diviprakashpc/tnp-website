@@ -5,15 +5,28 @@
     align-items: $ac;
 }
 .recruit{
-    background-color: rgb(246, 246, 250);
+    background-color: rgba(246, 246, 250,0.2);
+    background-image: url('../../../public/images/image-4.png');
     display: flex;
     @include flex(column,space-between);
-    margin: 2.5rem ;
-    padding: 2rem 3rem;
+    padding: 3rem 3rem 2rem 3rem;
     & > h1{
         margin-bottom: 2rem;
     }
-    & > p{
-        font-size: 1.5rem;
+    & > .recruit-content{
+        font-size: 1.3rem;
+        width: 90%;
+        padding: 1rem;
+        border-radius: 2rem;
+        text-align: justify;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+    & > .recruit-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
     }
 }

@@ -1,10 +1,19 @@
-.header {
+.header-container {
   width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  color: #5555cc;
   text-align: right;
-  margin-top: 3rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+          box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  color: #6262b6;
+  margin-bottom: 1.7rem;
+  border-radius: 1rem;
+}
+
+.header > span {
+  border-bottom: 4px solid #9468bbd0;
+  border-radius: .2rem;
+  padding-bottom: 0.2rem;
 }
 
 .alignLeft {
