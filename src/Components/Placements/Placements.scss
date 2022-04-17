@@ -5,17 +5,39 @@
   // border: 1px solid rgb(226, 223, 223);
   // border-radius: 1rem;
   // box-shadow: 0 0 10px 2px rgb(226, 223, 223);
-  padding: 3rem 2rem;
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   & > .placement-heading {
+    width: 90%;
+    text-align: center;
     margin-bottom: 3.5rem;
     background-color: rgba(200, 218, 218, 0.37);
     padding: 1rem;
     border-radius: 0.5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,rgba(0, 0, 0,30%) 0px 30px 60px -30px;
+    // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,rgba(0, 0, 0,30%) 0px 30px 60px -30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   }
+}
+.placements .carousel{
+  border: 2px solid rgb(216, 229, 230);
+  width: 70%;
+  height: 60%;
+  margin-bottom: 3rem;
+  border-radius: 0.3rem;
+  box-shadow: rgba(200, 200, 221, 0.993) 0px 1px 0px, rgba(194, 224, 233, 0.644) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+.placement-image{
+  height:25rem !important;
+  border-radius: 0.3rem;
+  // border: 5px solid #000;
+}
+.makeBlack{
+  background-color: #000 !important;
+}
+.makeColorBlack{
+  color: #000;
 }

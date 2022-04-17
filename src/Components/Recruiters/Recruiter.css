@@ -17,14 +17,14 @@
 }
 
 .recruiters-container > .recruiters-heading {
-  width: 100%;
+  width: 90%;
   text-align: center;
   margin-bottom: 3.5rem;
   background-color: rgba(220, 236, 236, 0.822);
   padding: 1rem;
   border-radius: 0.5rem;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, black 0px 30px 60px -30px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, black 0px 30px 60px -30px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
 .recruiters-container > .recruiters {
@@ -39,9 +39,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #fff;
+  border: 1px solid rgba(206, 234, 236, 0.808);
+  border-radius: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 16rem;
 }
 
 .recruiters-container > .recruiters > .recruiters-1 {
@@ -55,10 +59,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
   width: 100%;
 }
 
 .recruiters-container > .recruiters > .recruiters-1 > span {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1rem;
   -webkit-animation-name: motion;
           animation-name: motion;
   -webkit-animation-duration: 20s;
@@ -80,10 +96,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
   width: 100%;
 }
 
 .recruiters-container > .recruiters > .recruiters-2 > span {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1rem;
   -webkit-animation-name: motion;
           animation-name: motion;
   -webkit-animation-duration: 15s;
@@ -96,61 +124,25 @@
 
 @-webkit-keyframes motion {
   0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    left: 0;
   }
-  20% {
-    -webkit-transform: translateX(30rem);
-            transform: translateX(30rem);
-  }
-  40% {
-    -webkit-transform: translateX(60rem);
-            transform: translateX(60rem);
-    visibility: hidden;
-  }
-  60% {
-    -webkit-transform: translateX(-60rem);
-            transform: translateX(-60rem);
-    visibility: hidden;
-  }
-  80% {
-    visibility: visible;
-    -webkit-transform: translateX(-30rem);
-            transform: translateX(-30rem);
+  50% {
+    left: 100%;
   }
   100% {
-    -webkit-transform: translateX(0rem);
-            transform: translateX(0rem);
+    left: 0;
   }
 }
 
 @keyframes motion {
   0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    left: 0;
   }
-  20% {
-    -webkit-transform: translateX(30rem);
-            transform: translateX(30rem);
-  }
-  40% {
-    -webkit-transform: translateX(60rem);
-            transform: translateX(60rem);
-    visibility: hidden;
-  }
-  60% {
-    -webkit-transform: translateX(-60rem);
-            transform: translateX(-60rem);
-    visibility: hidden;
-  }
-  80% {
-    visibility: visible;
-    -webkit-transform: translateX(-30rem);
-            transform: translateX(-30rem);
+  50% {
+    left: 100%;
   }
   100% {
-    -webkit-transform: translateX(0rem);
-            transform: translateX(0rem);
+    left: 0;
   }
 }
 /*# sourceMappingURL=Recruiter.css.map */
