@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './TopButton.css';
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { HashLink as Link } from 'react-router-hash-link';
 function TopButton() {
 
     useEffect(() => {
@@ -26,13 +27,13 @@ function TopButton() {
     }, [])
     
   return (
-    <a className={`top-button ${!visible && 'makeVisible'}`} href='#home' data-aos='fade-up'>
+    <Link className={`top-button ${!visible && 'makeVisible'}`} to='/#home' data-aos='fade-up'>
         {/* <span></span>
         <span></span>
         <span></span>
         <span></span> */}
         <i class="fa-solid fa-angles-up"></i>
-    </a>
+    </Link>
   )
 }
 

@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faF } from '@fortawesome/free-solid-svg-icons';
+import { HashLink as Link } from 'react-router-hash-link';
 function Home() {
     return (
         <div id='home'>
@@ -43,7 +44,7 @@ function Home() {
             {/* -- Down button -- */}
             <div class="down-button-container">
                 <div class="bg"></div>
-                <div class="button"><a href="#about"><FontAwesomeIcon icon={faChevronDown} /></a></div>
+                <div class="button"><Link to="/#about" className='button-link'><FontAwesomeIcon icon={faChevronDown} /></Link></div>
             </div>
 
             {/* --Social Media Buttons-- */}
