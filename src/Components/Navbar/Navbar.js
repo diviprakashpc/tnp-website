@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
 import { Outlet } from 'react-router-dom';
-import { NavHashLink as Link } from 'react-router-hash-link';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Navbar = () => {
     const [onScrollChange,setOnScrollChange] = useState(false);
@@ -42,7 +42,7 @@ const Navbar = () => {
                     <ul className="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
                         <li className="nav-item me-2">
                             {/* <a  id='home-link' className="nav-link" aria-current="page" href="#"></a> */}
-                            <Link to="/#home" id='home-link'  className='nav-link' activeClassName='active'>Home</Link>
+                            <Link to="/#home" id='home-link'  className='nav-link'>Home</Link>
                         </li>
                         <li className="nav-item me-2">
                             {/* <a id='about-link' className="nav-link" href="#about">About Us</a> */}

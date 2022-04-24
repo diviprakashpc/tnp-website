@@ -1,10 +1,11 @@
 import React from 'react'
 import './ContactUs.css'
+import { HashLink as Link } from 'react-router-hash-link';
 function ContactUs() {
   return (
     <div className='contactUs'>
       <div className='contactHeader'>
-        <a href='/'><i class="fa-solid fa-xmark"></i></a>
+        <Link to='/'><i class="fa-solid fa-xmark"></i></Link>
       </div>
       <div className='note'>* For more details hover over images</div>
       <div className='team'>
