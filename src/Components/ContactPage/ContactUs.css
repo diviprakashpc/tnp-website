@@ -15,6 +15,13 @@
   width: 0.7rem;
 }
 
+.note {
+  margin: 1rem 0 0 0;
+  text-align: center;
+  color: rgba(33, 150, 243, 0.4);
+  font-weight: bold;
+}
+
 .team {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,21 +39,26 @@
 }
 
 .team > h3 {
-  margin-top: 2rem;
+  margin: 3rem 0 1.5rem 0;
+}
+
+.team > .tpoHeading {
+  margin-top: 1rem;
 }
 
 .makeFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  row-gap: 3rem;
 }
 
 .contact-container {
@@ -77,6 +89,7 @@
   -webkit-transform-origin: top;
           transform-origin: top;
   border-radius: 20px;
+  background-color: #dbd9d9;
 }
 
 .contact-container .contact-cards > .imgBox > img {
@@ -87,6 +100,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  font-size: 0.5rem;
 }
 
 .contact-container .contact-cards > .contact-content {

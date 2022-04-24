@@ -1,0 +1,19 @@
+.button-container {
+  width: 20rem;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #66c4f0;
+}
+
+.button-container > .button-link {
+  text-decoration: none;
+}
+/*# sourceMappingURL=HomeButton.css.map */

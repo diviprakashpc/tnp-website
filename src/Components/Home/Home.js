@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faF } from '@fortawesome/free-solid-svg-icons';
+import HomeButton from '../Utility/HomeButton/HomeButton';
 function Home() {
     return (
         <div id='home'>
@@ -32,6 +33,11 @@ function Home() {
                     <h4>विद्यया . अमृतम . श्नुते</h4>
                     <h1>Training and Placement Cell</h1>
                     <h2>IIIT BHOPAL</h2>
+                    {/* <div className='buttons'>
+                    <HomeButton link={`https://drive.google.com/file/d/136FL1gnE5N9zKVumUCUXNIls29Gldo7t/view?usp=sharing`}>Brochure</HomeButton>
+                    <HomeButton link={`https://drive.google.com/file/d/136FL1gnE5N9zKVumUCUXNIls29Gldo7t/view?usp=sharing`}>Brochure</HomeButton>
+
+                </div> */}
                 </div>
             </div>
 
