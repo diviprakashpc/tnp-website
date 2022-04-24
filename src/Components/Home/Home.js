@@ -2,7 +2,6 @@ import React from 'react'
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faF } from '@fortawesome/free-solid-svg-icons';
-import HomeButton from '../Utility/HomeButton/HomeButton';
 function Home() {
     return (
         <div id='home'>
