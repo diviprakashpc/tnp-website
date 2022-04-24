@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route } from "react-router-dom";
 import ContactUs from "./Components/ContactPage/ContactUs";
 import Homepage from "./Components/Homepage/Homepage";
+import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs />}></Route>
         <Route path="*" element={<h1>Error</h1>}></Route>
       </Routes>
+      <Footer />
     </div>
   );
 }

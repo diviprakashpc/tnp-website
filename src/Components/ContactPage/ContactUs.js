@@ -3,6 +3,7 @@ import './ContactUs.css'
 function ContactUs() {
   return (
     <div className='contactUs'>
+      <div className='team-cover'>
       <div className='contactHeader'>
         <a href='/'><i class="fa-solid fa-xmark"></i></a>
       </div>
@@ -274,6 +275,7 @@ function ContactUs() {
 
         </div>
       </div>
+    </div>
     </div>
   )
 }

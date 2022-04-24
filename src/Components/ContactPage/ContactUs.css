@@ -1,3 +1,10 @@
+.contactUs {
+  background-image: url("../../../public/images/image-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 2.5rem;
+}
+
 .contactHeader {
   background-color: #0051ff;
   width: 100%;
