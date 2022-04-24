@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .contactUs {
   background-image: url("../../../public/images/image-1.jpg");
   background-size: cover;
@@ -10,6 +17,7 @@
   width: 100%;
   padding: 0.5rem;
   position: relative;
+  z-index: 10000;
 }
 
 .contactHeader > a {

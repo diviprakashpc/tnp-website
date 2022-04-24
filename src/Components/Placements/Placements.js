@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Recruiters from '../Recruiters/Recruiters'
 // import Header from '../Utility/Header/Header'
 // import StatsCard from '../Utility/StatsCard/StatsCard'
 import './Placements.css';
 function Placements() {
+
   return (
     <div className='placements' id='stats'>
       <h1 className='placement-heading'>Placements Statistics</h1>

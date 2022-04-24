@@ -3,7 +3,6 @@ import './ContactUs.css'
 function ContactUs() {
   return (
     <div className='contactUs'>
-      <div className='team-cover'>
       <div className='contactHeader'>
         <a href='/'><i class="fa-solid fa-xmark"></i></a>
       </div>
@@ -61,7 +60,7 @@ function ContactUs() {
               </div>
               <div className='contact-content'>
                 <div className='contact-details'>
-                  <h2>Dr, Praveen Pawar</h2>
+                  <h2>Dr. Praveen Pawar</h2>
                   <ul className='contact-icons'>
                     <li><a href='tel:7554051950'><i class="fa-solid fa-phone"></i></a></li>
                     <li><a href='mailto:tpo@iiitbhopal.ac.in'><i class="fa-solid fa-envelope"></i></a></li>
@@ -275,7 +274,6 @@ function ContactUs() {
 
         </div>
       </div>
-    </div>
     </div>
   )
 }
