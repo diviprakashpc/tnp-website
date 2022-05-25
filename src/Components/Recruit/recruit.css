@@ -49,4 +49,10 @@
           align-items: center;
   margin-top: 3rem;
 }
+
+@media screen and (max-width: 850px) {
+  .recruit {
+    padding: 3rem 0rem 2rem 0rem;
+  }
+}
 /*# sourceMappingURL=Recruit.css.map */

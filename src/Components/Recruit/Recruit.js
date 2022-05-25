@@ -5,7 +5,6 @@ import './recruit.css';
 import Aos from "aos";
 import "aos/dist/aos.css";
 function Recruit() {
-    let heading, content;
     useEffect(() => {
         Aos.init({ duration: 500 });
     }, [])
@@ -25,7 +24,7 @@ function Recruit() {
             </div>
             <div data-aos="fade-up"className='recruit-section'>
             <Header heading={"Finest curriculum"} alignLeft={false}/>
-            <Container content={"The Institute offers undergraduate programs in Computer Science & Engineering and Electronics & Communications Engineering. IIIT Bhopal is well connected with peer institutes and industries to enhance research and development, and enrich its educational programs. The Institute has laid out a balanced curriculum with a strong emphasis on practical skills along with theory; and encourages innovations and co-curricular activities. IIIT Kota provides an environment that nurtures leaders in addition to industry-ready engineers."} />
+            <Container content={"The Institute offers undergraduate programs in Computer Science & Engineering and Electronics & Communications Engineering. IIIT Bhopal is well connected with peer institutes and industries to enhance research and development, and enrich its educational programs. The Institute has laid out a balanced curriculum with a strong emphasis on practical skills along with theory; and encourages innovations and co-curricular activities. IIIT Bhopal provides an environment that nurtures leaders in addition to industry-ready engineers."} />
             </div>
             <div data-aos="fade-right"className='recruit-section'>
             <Header heading={"All Around Development"} alignLeft={true}/>

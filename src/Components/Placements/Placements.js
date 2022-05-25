@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Recruiters from '../Recruiters/Recruiters'
 // import Header from '../Utility/Header/Header'
 // import StatsCard from '../Utility/StatsCard/StatsCard'

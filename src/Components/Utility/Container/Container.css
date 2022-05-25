@@ -6,5 +6,19 @@
   padding: 1rem;
   border-radius: 1rem;
   width: 60%;
+  text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    height: 23.5rem;
+    overflow-y: scroll;
+  }
 }
 /*# sourceMappingURL=Container.css.map */

@@ -25,7 +25,6 @@
 .placements .carousel{
   border: 2px solid rgb(216, 229, 230);
   width: 60%;
-  height: 65%;
   margin-bottom: 3rem;
   border-radius: 0.3rem;
   box-shadow: rgba(200, 200, 221, 0.993) 0px 1px 0px, rgba(194, 224, 233, 0.644) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
@@ -40,4 +39,11 @@
 }
 .makeColorBlack{
   color: #000;
+}
+
+
+@media screen and (max-width:1000px){
+  .placements .carousel{
+      width: 80%;
+  }
 }

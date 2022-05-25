@@ -32,7 +32,7 @@ function TopButton() {
         <span></span>
         <span></span>
         <span></span> */}
-        <i class="fa-solid fa-angles-up"></i>
+        <i className="fa-solid fa-angles-up"></i>
     </Link>
   )
 }

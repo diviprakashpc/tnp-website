@@ -11,7 +11,7 @@ const About = () => {
             <div className='aboutUs'>
                 <h2 data-aos='fade-up'><span>About Us</span></h2>
                 <p data-aos='fade-up'><a data-aos='fade-up' href='https://iiitbhopal.ac.in/#!/' target='_blank'>Indian Institute of Information Technology Bhopal</a> , is an institute of national importance established by Government of India, To address the challenges faced by the Indian IT industry and growth of the domestic IT market, under the objective of establishing twenty IIIT's on a Not-for-profit Public Private Partnership (N-PPP) basis.
-                <p data-aos='fade-up'></p> In a short span IIIT Bhopal has established itself as one of the most sought after destinations for aspiring technologists all over India. We attract the finest students for our programmes and we invariably aspire to meet the increasing demands of the industry by nurturing some of the best engineers and developers the country has to offer.
+                 In a short span IIIT Bhopal has established itself as one of the most sought after destinations for aspiring technologists all over India. We attract the finest students for our programmes and we invariably aspire to meet the increasing demands of the industry by nurturing some of the best engineers and developers the country has to offer.
                 </p>
             </div>
             <div className='director-desk' data-aos='fade-right'>

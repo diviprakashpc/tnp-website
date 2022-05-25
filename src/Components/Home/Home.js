@@ -10,7 +10,7 @@ function Home() {
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src="images/college1.jpg" className="d-block w-100" alt="..." />
+                        <img src="images/college1.jpg" className="d-block w-100" alt="College Image" />
                     </div>
                     {/* <div className="carousel-item">
                     <img src="..." className="d-block w-100" alt="..." />
@@ -42,27 +42,29 @@ function Home() {
             </div>
 
             {/* -- Down button -- */}
-            <div class="down-button-container">
-                <div class="bg"></div>
-                <div class="button"><Link to="/#about" className='button-link'><FontAwesomeIcon icon={faChevronDown} /></Link></div>
+            <div className="down-button-container">
+                <Link to="/#about">
+                <div className="bg"></div>
+                <div className="button button-link"><FontAwesomeIcon icon={faChevronDown} /></div>
+                </Link>
             </div>
 
             {/* --Social Media Buttons-- */}
-            <div class='social-links'>
-                <div class='social-btn flex-center' id="gmail">
-                    <i class="fa-solid fa-envelope"></i>
+            <div className='social-links'>
+                <div className='social-btn flex-center' id="gmail">
+                    <i className="fa-solid fa-envelope"></i>
                     <span><a href='mailto:tpwiiitb@gmail.com' target='_blank'>@tpwiiitb</a></span>
                 </div>
-                <div class='social-btn flex-center' id="facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
+                <div className='social-btn flex-center' id="facebook">
+                    <i className="fa-brands fa-facebook-f"></i>
                     <span><a href='https://www.facebook.com/iiitbhopalofficial' target='_blank'>@iiitbhopal</a></span>
                 </div>
-                <div class='social-btn flex-center' id="twitter">
-                    <i class="fa-brands fa-twitter"></i>
+                <div className='social-btn flex-center' id="twitter">
+                    <i className="fa-brands fa-twitter"></i>
                     <span><a href='https://twitter.com/iiitbhopal' target='_blank'>@tpwiiitb</a></span>
                 </div>
-                <div class='social-btn flex-center' id="linkedin">
-                    <i class="fa-brands fa-linkedin-in"></i>
+                <div className='social-btn flex-center' id="linkedin">
+                    <i className="fa-brands fa-linkedin-in"></i>
                     <span><a href='https://www.linkedin.com/in/tnp-iiitbhopal/' target='_blank'>@tpwiiitb</a></span>
                 </div>
             </div>
