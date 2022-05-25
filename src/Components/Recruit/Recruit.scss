@@ -1,38 +1,39 @@
-@mixin flex($fd:row,$jc:center,$ac:center){
-    display: flex;
-    flex-direction: $fd;
-    justify-content: $jc;
-    align-items: $ac;
-}
-.recruit{
-    background-color: rgba(246, 246, 250,0.2);
-    background-image: url('../../../public/images/image-4.png');
-    display: flex;
-    @include flex(column,space-between);
-    padding: 3rem 3rem 2rem 3rem;
-    & > h1{
-        margin-bottom: 2rem;
-    }
-    & > .recruit-content{
-        font-size: 1.3rem;
-        width: 90%;
-        padding: 1rem;
-        border-radius: 2rem;
-        text-align: justify;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-    & > .recruit-section{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 3rem;
-    }
+@mixin flex($fd: row, $jc: center, $ac: center) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ac;
 }
 
-@media screen and (max-width:850px)   {
-    .recruit{
-        padding: 3rem 0rem 2rem 0rem;
-    }
+.recruit {
+  background-color: rgba(246, 246, 250, 0.2);
+  background-image: url("../../../public/images/image-4.png");
+  display: flex;
+  @include flex(column, space-between);
+  padding: 3rem 3rem 2rem 3rem;
+  & > h1 {
+    margin-bottom: 2rem;
+  }
+  & > .recruit-content {
+    font-size: 1.3rem;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 2rem;
+    text-align: justify;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  & > .recruit-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .recruit {
+    padding: 3rem 0rem 2rem 0rem;
+  }
 }

@@ -24,7 +24,7 @@ function Placements() {
             <img src="Placement_img/placement-2.png" className="d-block w-100 placement-image" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src="Placement_img/placement-3.png" className="d-block w-100 placement-image" alt="..."/>
+            <img src="Placement_img/placement-3.png" className="d-block w-100 placement-image" alt="..." />
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

@@ -44,8 +44,8 @@ function Home() {
             {/* -- Down button -- */}
             <div className="down-button-container">
                 <Link to="/#about">
-                <div className="bg"></div>
-                <div className="button button-link"><FontAwesomeIcon icon={faChevronDown} /></div>
+                    <div className="bg"></div>
+                    <div className="button button-link"><FontAwesomeIcon icon={faChevronDown} /></div>
                 </Link>
             </div>
 

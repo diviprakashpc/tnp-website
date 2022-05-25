@@ -1,329 +1,384 @@
-$bgcolor : #fff;
+$bgcolor: #fff;
 
 // Mixin for styling scrollbars
-@mixin scrollbars($wsize, $hsize, $foreground-color, $radius,$background-color: mix($foreground-color, white,  50%), $hoverColor : rgb(51, 50, 50)) {
-    // For Google Chrome
-    &::-webkit-scrollbar {
-      width:  $wsize;
-      height: $hsize;
+@mixin scrollbars(
+  $wsize,
+  $hsize,
+  $foreground-color,
+  $radius,
+  $background-color: mix($foreground-color, white, 50%),
+  $hoverColor: rgb(51, 50, 50)
+) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width: $wsize;
+    height: $hsize;
     border-radius: $radius;
-}
+  }
 
-    &::-webkit-scrollbar-thumb {
+  &::-webkit-scrollbar-thumb {
     background: $foreground-color;
     border-radius: $radius;
-    }
-  
-    &::-webkit-scrollbar-thumb:hover {
-        background: $hoverColor;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $hoverColor;
     // border-radius: $radius;
+  }
 
-      }
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+    border-radius: $radius;
+  }
 
-    &::-webkit-scrollbar-track {
-      background: $background-color;
-      border-radius: $radius;
-    }
-  
-    // For Internet Explorer
-    & {
-      scrollbar-face-color: $foreground-color;
-      scrollbar-track-color: $background-color;
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+.about {
+  //     background: #D3CCE3;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right bottom, rgb(230, 226, 253), #f3f2f7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-top: 4.5rem;
+  padding-bottom: 4rem;
+  background-image: url("../../../public/images/image-3.jpg");
+}
+
+.aboutUs {
+  background-color: $bgcolor;
+  margin: 2.5rem;
+  // padding: 2.5rem;
+  border-radius: 1.4rem;
+  padding: 1.5rem 2rem 2rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 1.96px 0.88px;
+
+  & > h2 {
+    margin-bottom: 1.7rem;
+
+    span {
+      border-bottom: 4px solid #2fa4ff;
+      border-radius: 0.2rem;
+      padding-bottom: 0.2rem;
     }
   }
 
+  & > p {
+    font-size: 1.3rem;
+    margin-left: 3.8rem;
+    margin-top: 2rem;
 
-.about{
-//     background: #D3CCE3;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to right bottom, rgb(230, 226, 253), #f3f2f7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-padding-top: 4.5rem;
-padding-bottom: 4rem;
-background-image: url("../../../public/images/image-3.jpg");
-}
-.aboutUs{
-    background-color: $bgcolor;
-    margin: 2.5rem;
-    // padding: 2.5rem;
-    border-radius: 1.4rem;
-    padding: 1.5rem 2rem 2rem 2rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 1.96px 0.88px;
-    & > h2{
-        margin-bottom: 1.7rem;
-        span{
-            border-bottom: 4px solid #2FA4FF;
-            border-radius: .2rem;
-            padding-bottom: 0.2rem;
-        }
+    & > a {
+      color: #2fa4ff;
+      text-decoration: none;
+      text-transform: uppercase;
     }
-    & > p{
-        font-size: 1.3rem;
-        margin-left: 3.8rem;
-        margin-top: 2rem;
-        & > a{
-            color: #2FA4FF;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-        
-    }
+  }
 }
 
-.director-desk{
-    // background-color: $bgcolor;
-    margin: 4rem 4.4rem;
-    h2{
-        span{
-            border-bottom: 4px solid #2FA4FF;
-        border-radius: .2rem;
-        padding-bottom: 0.4rem;
-        }
-    }
-    .director-content{
-    // background-color: $bgcolor;
-        display: flex;
-        margin-top: 1.2rem;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .director-image{
-        position: relative;
-        margin: 0rem 6rem 0 2rem;
-        height: 13rem;
+.director-desk {
+  // background-color: $bgcolor;
+  margin: 4rem 4.4rem;
 
-        width: 12rem;
-
-        background-color: rgba(255, 255, 255, 0.6);
-        border: 2px solid #d3d4db;
-        border-radius: 2rem;     
-        box-shadow: rgba(175, 174, 174, 0.3) 0px 19px 38px, rgba(165, 161, 161, 0.22) 0px 15px 12px;
-        & > img{
-            border-radius: 2rem;     
-    
-            }
+  h2 {
+    span {
+      border-bottom: 4px solid #2fa4ff;
+      border-radius: 0.2rem;
+      padding-bottom: 0.4rem;
     }
-    .director-message{
+  }
+
+  .director-content {
+    // background-color: $bgcolor;
+    display: flex;
+    margin-top: 1.2rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .director-image {
+    position: relative;
+    margin: 0rem 6rem 0 2rem;
+    height: 13rem;
+
+    width: 12rem;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid #d3d4db;
+    border-radius: 2rem;
+    box-shadow: rgba(175, 174, 174, 0.3) 0px 19px 38px,
+      rgba(165, 161, 161, 0.22) 0px 15px 12px;
+
+    & > img {
+      border-radius: 2rem;
+    }
+  }
+
+  .director-message {
     background-color: #606bcebb;
-        color: #fff;
-        margin-top: 1rem;
-        max-height: 400px;
-        margin-right: 3rem;
-        font-size: 1.3rem;
-        overflow-y: scroll;
-        border: 1px solid rgb(233, 231, 231);
-        border-radius:  2rem;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        padding: 1rem;
-        box-shadow: 0 0 0.4rem 0rem rgb(146, 145, 145);
+    color: #fff;
+    margin-top: 1rem;
+    max-height: 400px;
+    margin-right: 3rem;
+    font-size: 1.3rem;
+    overflow-y: scroll;
+    border: 1px solid rgb(233, 231, 231);
+    border-radius: 2rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 1rem;
+    box-shadow: 0 0 0.4rem 0rem rgb(146, 145, 145);
 
-        @include scrollbars(5px, 30px,rgb(6, 128, 209), 1rem, rgb(170, 167, 167), rgb(9, 32, 231));
-    }
-    .quote::before{
-        content: open-quote;
-        margin-right: 0.5rem;
-        display: inline;
-        height: 0;
-        line-height: 0;
-        position: relative;
-        left: 0.1rem;
-        top: 0.8rem;
-        color: #ccc;
-        font-size: 3.3rem;
-    }
-    .quote::after{
-        content: close-quote;
-        margin-left: 0.5rem;
-        display: inline;
-        height: 0;
-        line-height: 0;
-        position: relative;
-        left: 0.1rem;
-        top: 0.8rem;
-        color: #ccc;
-        font-size: 3.3rem;
-    }
-    .director-name{
-        color: rgb(230, 227, 227);
-        text-align: end;
-        font-weight: bold;
-    }
+    @include scrollbars(
+      5px,
+      30px,
+      rgb(6, 128, 209),
+      1rem,
+      rgb(170, 167, 167),
+      rgb(9, 32, 231)
+    );
+  }
+
+  .quote::before {
+    content: open-quote;
+    margin-right: 0.5rem;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    left: 0.1rem;
+    top: 0.8rem;
+    color: #ccc;
+    font-size: 3.3rem;
+  }
+
+  .quote::after {
+    content: close-quote;
+    margin-left: 0.5rem;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    left: 0.1rem;
+    top: 0.8rem;
+    color: #ccc;
+    font-size: 3.3rem;
+  }
+
+  .director-name {
+    color: rgb(230, 227, 227);
+    text-align: end;
+    font-weight: bold;
+  }
 }
 
 /*--TPO--*/
-.tpo-desk{
-    margin: 7rem 4.4rem 0 4.4rem;
-    h2{
-        text-align: right;
-        margin-bottom: 2rem;
-        span{
-            border-bottom: 4px solid #2FA4FF;
-        border-radius: .2rem;
-        padding-bottom: 0.4rem;
-        }
-    }
-    .tpo-content{
-        display: flex;
-        flex-direction: row-reverse;
-        margin-top: 1.2rem;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .tpo-image{
-        z-index: 10;
-        margin: 0rem 6rem 0 2rem;
-        position: relative;
-        height: 13rem;
+.tpo-desk {
+  margin: 7rem 4.4rem 0 4.4rem;
 
-        width: 12rem;
-        
-        // padding: 1rem;
-        background-color: rgba(255, 255, 255, 0.6);
-        border: 2px solid #d3d4db;
-        border-radius: 2rem;     
-        box-shadow: rgba(175, 174, 174, 0.3) 0px 19px 38px, rgba(165, 161, 161, 0.22) 0px 15px 12px;
-        & > img{
-        border-radius: 2rem;
-        width: 12rem;
-        height: 13rem;     
-        }
-    }
+  h2 {
+    text-align: right;
+    margin-bottom: 2rem;
 
-    .tpo-message{
+    span {
+      border-bottom: 4px solid #2fa4ff;
+      border-radius: 0.2rem;
+      padding-bottom: 0.4rem;
+    }
+  }
+
+  .tpo-content {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 1.2rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .tpo-image {
+    z-index: 10;
+    margin: 0rem 6rem 0 2rem;
+    position: relative;
+    height: 13rem;
+
+    width: 12rem;
+
+    // padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid #d3d4db;
+    border-radius: 2rem;
+    box-shadow: rgba(175, 174, 174, 0.3) 0px 19px 38px,
+      rgba(165, 161, 161, 0.22) 0px 15px 12px;
+
+    & > img {
+      border-radius: 2rem;
+      width: 12rem;
+      height: 13rem;
+    }
+  }
+
+  .tpo-message {
     background-color: #606bcebb;
-        color: #fff;
-        margin-top: 1rem;
-        max-height: 400px;
-        margin-right: 3rem;
-        font-size: 1.3rem;
-        overflow-y: scroll;
-        border: 1px solid rgb(233, 231, 231);
-        border-radius:  2rem;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        padding: 1rem;
-        box-shadow: 0 0 0.4rem 0rem rgb(146, 145, 145);
-        @include scrollbars(5px, 30px,rgb(6, 128, 209), 1rem, rgb(170, 167, 167), rgb(9, 32, 231));
+    color: #fff;
+    margin-top: 1rem;
+    max-height: 400px;
+    margin-right: 3rem;
+    font-size: 1.3rem;
+    overflow-y: scroll;
+    border: 1px solid rgb(233, 231, 231);
+    border-radius: 2rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 1rem;
+    box-shadow: 0 0 0.4rem 0rem rgb(146, 145, 145);
+    @include scrollbars(
+      5px,
+      30px,
+      rgb(6, 128, 209),
+      1rem,
+      rgb(170, 167, 167),
+      rgb(9, 32, 231)
+    );
+  }
 
-    }
-    .quote::before{
-        content: open-quote;
-        margin-right: 0.5rem;
-        display: inline;
-        height: 0;
-        line-height: 0;
-        position: relative;
-        left: 0.1rem;
-        top: 0.8rem;
-        color: #ccc;
-        font-size: 3.3rem;
-    }
-    .quote::after{
-        content: close-quote;
-        margin-left: 0.5rem;
-        display: inline;
-        height: 0;
-        line-height: 0;
-        position: relative;
-        left: 0.1rem;
-        top: 0.8rem;
-        color: #ccc;
-        font-size: 3.3rem;
-    }
-    .tpo-name{
-        color: rgb(224, 221, 221);
-        text-align: end;
-        font-weight: bold;
-    }
+  .quote::before {
+    content: open-quote;
+    margin-right: 0.5rem;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    left: 0.1rem;
+    top: 0.8rem;
+    color: #ccc;
+    font-size: 3.3rem;
+  }
+
+  .quote::after {
+    content: close-quote;
+    margin-left: 0.5rem;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    left: 0.1rem;
+    top: 0.8rem;
+    color: #ccc;
+    font-size: 3.3rem;
+  }
+
+  .tpo-name {
+    color: rgb(224, 221, 221);
+    text-align: end;
+    font-weight: bold;
+  }
 }
 
+@media only screen and (max-width: 700px) {
+  .about {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 
-@media only screen and (max-width:700px){
-    .about{
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        .aboutUs{
-            margin: 1rem 1.3rem 0rem 0.8rem;
-            padding: 1.5rem 0.5rem 0.5rem 1rem;
-            & > h2{
-                margin-bottom: 1rem;
-                font-size: 1.3rem;
-            }    
-            & > p{
-                font-size: 1rem;
-                margin-left: 0rem;
-                padding-right: 0.6rem;
-                margin-top: 1.5rem;
-                text-align: justify;
-                & > a{
-                    color: #2FA4FF;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                }
+    .aboutUs {
+      margin: 1rem 1.3rem 0rem 0.8rem;
+      padding: 1.5rem 0.5rem 0.5rem 1rem;
 
-            }
+      & > h2 {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+      }
+
+      & > p {
+        font-size: 1rem;
+        margin-left: 0rem;
+        padding-right: 0.6rem;
+        margin-top: 1.5rem;
+        text-align: justify;
+
+        & > a {
+          color: #2fa4ff;
+          text-decoration: none;
+          text-transform: uppercase;
         }
+      }
     }
-    .director-desk{
-        margin: 2rem 1rem;
-        h2{
-            font-size: 1.3rem;
-        }
-        .director-content{
-            // background-color: $bgcolor;
-                display: flex;
-                margin-top: 2rem;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-        }
-        .director-image{
-            margin: 0;
-        }
-        .director-message{
-            margin-top: 2rem;
-            height: 300px;
-            width: 100%;
-            margin-right: 0;
-            font-size: 1rem;
-            text-align: justify;
-            padding: 1rem 1rem 0 1rem;
-        }
-        .quote::before, .quote::after{
-            font-size: 2.6rem;
-        }
+  }
+
+  .director-desk {
+    margin: 2rem 1rem;
+
+    h2 {
+      font-size: 1.3rem;
     }
-    .tpo-desk{
-        margin: 3rem 1rem 2rem 1rem;
-        h2{
-            font-size: 1.3rem;
-        }
-        .tpo-content{
-            // background-color: $bgcolor;
-                display: flex;
-                margin-top: 2rem;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-        }
-        .tpo-image{
-            margin: 0;
-        }
-        .tpo-message{
-            margin-top: 2rem;
-            height: 300px;
-            width: 100%;
-            margin-right: 0;
-            font-size: 1rem;
-            text-align: justify;
-            padding: 1rem 1rem 0 1rem;
-        }
-        .quote::before, .quote::after{
-            font-size: 2.6rem;
-        }
+
+    .director-content {
+      // background-color: $bgcolor;
+      display: flex;
+      margin-top: 2rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
+
+    .director-image {
+      margin: 0;
+    }
+
+    .director-message {
+      margin-top: 2rem;
+      height: 300px;
+      width: 100%;
+      margin-right: 0;
+      font-size: 1rem;
+      text-align: justify;
+      padding: 1rem 1rem 0 1rem;
+    }
+
+    .quote::before,
+    .quote::after {
+      font-size: 2.6rem;
+    }
+  }
+
+  .tpo-desk {
+    margin: 3rem 1rem 2rem 1rem;
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    .tpo-content {
+      // background-color: $bgcolor;
+      display: flex;
+      margin-top: 2rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .tpo-image {
+      margin: 0;
+    }
+
+    .tpo-message {
+      margin-top: 2rem;
+      height: 300px;
+      width: 100%;
+      margin-right: 0;
+      font-size: 1rem;
+      text-align: justify;
+      padding: 1rem 1rem 0 1rem;
+    }
+
+    .quote::before,
+    .quote::after {
+      font-size: 2.6rem;
+    }
+  }
 }

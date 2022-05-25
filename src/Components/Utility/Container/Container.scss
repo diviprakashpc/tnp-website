@@ -1,25 +1,70 @@
-.content{
-    background-color: rgba(175, 162, 241, 0.41);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-    font-size: 1.3rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    width: 60%;
-    text-align: justify;
+@mixin scrollbars(
+  $wsize,
+  $hsize,
+  $foreground-color,
+  $radius,
+  $background-color: mix($foreground-color, white, 50%),
+  $hoverColor: rgb(51, 50, 50)
+) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width: $wsize;
+    height: $hsize;
+    border-radius: $radius;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: $radius;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $hoverColor;
+    // border-radius: $radius;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+    border-radius: $radius;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
 }
 
-@media screen and (max-width:600px){
-    .content{
-        width: 90%;
-        // height: 23.5rem;
-        // overflow-y: scroll;
-    }
+.content {
+  background-color: rgba(175, 162, 241, 0.41);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  font-size: 1.3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 60%;
+  text-align: justify;
+//   @include scrollbars(
+//       5px,
+//       30px,
+//       rgb(6, 128, 209),
+//       1rem,
+//       rgb(170, 167, 167),
+//       rgb(9, 32, 231)
+//     );
 }
 
-@media screen and (max-width:400px){
-    .content{
-        // width: 90%;
-        height: 23.5rem;
-        overflow-y: scroll;
-    }
+@media screen and (max-width: 600px) {
+  .content {
+    width: 90%;
+    // height: 23.5rem;
+    // overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    // width: 90%;
+    height: 23.5rem;
+    overflow-y: scroll;
+  }
 }

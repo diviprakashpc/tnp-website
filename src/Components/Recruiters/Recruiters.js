@@ -1,11 +1,11 @@
-import React,{ useEffect } from 'react'
+import React, { useEffect } from 'react'
 import './Recruiter.css'
 import Aos from "aos";
 import "aos/dist/aos.css";
 function Recruiters() {
   useEffect(() => {
     Aos.init({ duration: 500 });
-}, [])
+  }, [])
   return (
     <div className='recruiters-container'>
       <h2 className='recruiters-heading'>Our Recruiters</h2>

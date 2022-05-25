@@ -31,7 +31,8 @@
   transition: all 1s;
 }
 
-.top-button:hover, .top-button:hover i {
+.top-button:hover,
+.top-button:hover i {
   background-color: #fff;
   color: #070707;
 }

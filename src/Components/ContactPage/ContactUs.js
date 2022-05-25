@@ -490,13 +490,13 @@ function ContactUs() {
           <div className="contact-container">
             <div className="contact-cards">
               <div className="imgBox">
-                <img src="images/aniket.jpeg"></img>
+                <img src="studentsImages/aniket.jpeg"></img>
               </div>
               <div className="contact-content">
                 <div className="contact-details">
                   <h2>Aniket Kumar Arya</h2>
                   <ul className="contact-icons">
-                  <li>
+                    <li>
                       <a href="tel:7717776013">
                         <i class="fa-solid fa-phone"></i>
                       </a>

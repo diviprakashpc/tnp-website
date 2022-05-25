@@ -1,12 +1,11 @@
-.button-container{
-    width: 20rem;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid rgb(102, 196, 240);
-    & > .button-link{
-        text-decoration: none;
-
-    }
+.button-container {
+  width: 20rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgb(102, 196, 240);
+  & > .button-link {
+    text-decoration: none;
+  }
 }

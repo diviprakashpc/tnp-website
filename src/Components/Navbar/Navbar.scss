@@ -4,19 +4,18 @@
   height: 10vh;
   transition: all 0.5s;
 }
-.container-fluid{
-    transition: all 0.3s;
+.container-fluid {
+  transition: all 0.3s;
   background-color: transparent !important;
   font-family: "montserrat-regular", sans-serif;
 }
-.container-fluid-color{
+.container-fluid-color {
   background-color: rgba(8, 8, 8, 0.8) !important;
 }
 /*Class to handle color change on scroll*/
-.change-color{
-    // background-color: rgb(1, 20, 133) !important;
-    background-color: #2d3267 !important;
-
+.change-color {
+  // background-color: rgb(1, 20, 133) !important;
+  background-color: #2d3267 !important;
 }
 
 .navbar-logo {
@@ -32,27 +31,27 @@
 }
 
 .nav-item {
-//   border-bottom: 2px solid rgba(0, 0, 0, 0);
-//   transition: all 0.1s;
-//   transition-timing-function: ease;
+  //   border-bottom: 2px solid rgba(0, 0, 0, 0);
+  //   transition: all 0.1s;
+  //   transition-timing-function: ease;
   margin-right: 3rem !important;
   font-size: 1.25rem;
   display: flex;
   justify-content: end;
 }
 .nav-link {
-    color: rgba(245, 244, 244,0.5) !important;
-    position: relative;
-    width: fit-content;
+  color: rgba(245, 244, 244, 0.5) !important;
+  position: relative;
+  width: fit-content;
 }
-.nav-link:hover{
-    color: #fff !important;
+.nav-link:hover {
+  color: #fff !important;
 }
 
 .nav-link,
 .nav-link::after,
 .nav-link::before {
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .nav-link::after {
   position: absolute;
@@ -74,6 +73,6 @@
 .active {
   color: #fff !important;
 }
-.active::after{
+.active::after {
   width: 100%;
 }
